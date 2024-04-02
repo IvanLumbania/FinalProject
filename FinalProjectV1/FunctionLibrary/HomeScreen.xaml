@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProjectV1.FunctionLibrary.HomeScreen"
+             Title="{x:Null}">
+
+    <ScrollView>
+        <Grid
+            RowDefinitions="1,*,*,*,*,*"
+            ColumnDefinitions="1,*,*,*,*"
+            BackgroundColor="BlanchedAlmond"
+            RowSpacing="100">
+
+            <Label x:Name="Title"
+                   Text="Library Of YYC"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   FontSize="70"
+                    Grid.ColumnSpan="4"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+            
+            <Button x:Name="EnterAdd"
+                   Text="Add"
+                    Clicked="Enter_Clicked"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   TextColor="Black"
+                   FontSize="30"
+                   BackgroundColor="AliceBlue"
+                   HeightRequest="50"
+                   WidthRequest="200"
+                    ></Button>
+            <Button x:Name="EnterUpdate"
+                   Text="Update"
+                    Clicked="Enter_Clicked"
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   TextColor="Black"
+                   FontSize="30"
+                   BackgroundColor="AliceBlue"
+                   HeightRequest="50"
+                   WidthRequest="200"
+                    ></Button>
+            <Button x:Name="EnterDelete"
+                   Text="Delete"
+                    Clicked="Enter_Clicked"
+                   Grid.Row="2"
+                   Grid.Column="3"
+                   TextColor="Black"
+                   FontSize="30"
+                   BackgroundColor="AliceBlue"
+                   HeightRequest="50"
+                   WidthRequest="200"
+                    ></Button>
+            <Button x:Name="EnterSearch"
+                   Text="Search"
+                    Clicked="Enter_Clicked"
+                   Grid.Row="2"
+                   Grid.Column="4"
+                   TextColor="Black"
+                   FontSize="30"
+                   BackgroundColor="AliceBlue"
+                   HeightRequest="50"
+                   WidthRequest="200"
+                    ></Button>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
